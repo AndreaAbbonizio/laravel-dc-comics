@@ -139,12 +139,17 @@ main .background-series {
 
 
         span {
-            color: white;
             font-size: .8em;
             font-weight: bold;
             padding: 10px 20px;
             background-color: #0c7cec;
-            margin-bottom: 1em
+            margin-bottom: 1em;
+
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
         }
     }
 }

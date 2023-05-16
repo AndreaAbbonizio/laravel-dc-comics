@@ -20,7 +20,9 @@
         </div>
     
         <div class="load-more">
-            <span>LOAD MORE</span>
+            <span>
+                <a href=" {{route('comics.create')}} ">NEW COMICS</a>
+            </span>
         </div>
     
     </div>
