@@ -1,0 +1,381 @@
+@import '~bootstrap/scss/bootstrap';
+
+
+header .container-visa {
+    background-color: #0c7cec;
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        gap: 50px;
+        color: white;
+        font-size: .8em;
+    }
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: 40px;
+    height: 100px;
+    margin-bottom: 1em;
+
+    .container-logo {
+        height: 80px;
+
+        img {
+            height: 100%;
+            transform: translateY(-20px);
+        }
+    }
+
+    .link-navbar {
+        display: flex;
+        height: 100%;
+        align-items: center;
+
+        list-style-type: none;
+
+        li {
+            padding: 20px;
+
+            text-transform: uppercase;
+
+
+            .active {
+                color: #0c7cec;
+                border-bottom: 3px solid #0c7cec;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    .container-input {
+        align-self: center;
+
+
+        input {
+            text-indent: 40%;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+    }
+}
+
+
+.container-jumbotron {
+    height: 300px;
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+main .background-series {
+    position: relative;
+    background-color: black;
+
+
+    #current-series {
+        position: absolute;
+        color: white;
+        font-weight: bold;
+        background-color: #0c7cec;
+        top: -15px;
+        left: 200px;
+        padding: 10px 20px;
+    }
+
+    .container-series {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 50px 0;
+
+
+        .card-series {
+            width: calc(100% / 6 - 20px * 5 / 6);
+            padding-top: 40px;
+
+            a {
+                text-decoration: none;
+
+
+                img {
+                    height: 135px;
+                    width: 100%;
+                    object-fit: fill;
+                }
+
+                #title {
+                    color: white;
+                    padding-top: .5em;
+                    text-transform: uppercase;
+                }
+            }
+
+
+
+        }
+
+    }
+
+    .load-more {
+        display: flex;
+        justify-content: center;
+
+
+
+        span {
+            color: white;
+            font-size: .8em;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #0c7cec;
+            margin-bottom: 1em
+        }
+    }
+}
+
+
+main #container-main {
+    position: relative;
+    z-index: 3;
+    background-color: #0c7cec;
+    color: white;
+
+
+    #main-links {
+        max-width: 1000px;
+        margin: 0 auto;
+        height: 200px;
+
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style-type: none;
+            height: 100%;
+
+            li {
+                display: flex;
+                align-items: center;
+
+                height: 50px;
+                gap: .5em;
+                text-transform: uppercase;
+
+                img {
+                    height: 100%;
+                }
+
+                span {
+                    font-size: .8em;
+                }
+            }
+
+
+        }
+
+
+
+    }
+}
+
+main .thumb-container {
+    position: relative;
+
+
+    height: 150px;
+    background-color: #0282f9;
+
+
+    .img-container {
+        position: absolute;
+        top: -150px;
+        left: 50px;
+        height: 200px;
+
+
+        img {
+            height: 100%;
+        }
+    }
+
+
+}
+
+main .comic {
+    display: flex;
+    gap: 20px;
+
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    .comic-left {
+        width: 60%;
+
+
+        h1 {
+            font-size: 1.8em;
+            color: #13405f;
+        }
+
+        .container-price {
+            display: flex;
+
+            .price {
+                background-color: #55ba59;
+                color: black;
+                padding: 6px 10px;
+                width: 50%;
+
+
+                span {
+                    color: white;
+                }
+            }
+
+            .availability {
+                background-color: #55ba59;
+                color: white;
+                padding: 6px 10px;
+            }
+
+        }
+
+        .comic-right {
+            text-align: end;
+        }
+    }
+
+}
+
+main .comic-details {
+    display: flex;
+    background-color: #f6f6f6;
+    gap: 40px;
+
+
+
+    h2 {
+        font-size: 1.4em;
+        color: #13405f;
+    }
+
+    .details {
+        color: #13405f;
+        padding: 20px 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+
+        span {
+            color: #0282f9;
+            margin-left: 40px;
+        }
+
+    }
+
+    .details-left {
+        width: 60%;
+    }
+
+    .details-right {
+        width: 40%;
+    }
+}
+
+footer #container-footer {
+    position: relative;
+    background-image: url("../images/footer-bg.jpg");
+    background-size: cover;
+    overflow: hidden;
+
+    #container-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        height: 350px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    strong {
+        font-size: 1.2em;
+        color: white;
+        z-index: 2;
+    }
+
+    ul {
+        width: 200px;
+        z-index: 2;
+        color: darkgrey;
+        list-style-type: none;
+
+    }
+
+
+    #background-logo {
+        z-index: 2;
+        width: 500px;
+        height: 500px;
+        transform: translateY(-25%);
+
+        img {
+            height: 100%;
+        }
+
+    }
+
+}
+
+
+footer #container-bg-footer-nav {
+    position: relative;
+    background-color: #303030;
+    padding: 20px;
+
+    #container-footer-nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: 0 auto;
+
+
+        button {
+            padding: 10px;
+            color: white;
+            border-color: #0c7cec;
+            background-color: #303030;
+        }
+
+    }
+
+    #container-icons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+
+        strong {
+            color: #0c7cec;
+        }
+    }
+
+}
