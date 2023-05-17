@@ -211,7 +211,7 @@ main .thumb-container {
     .img-container {
         position: absolute;
         top: -150px;
-        left: 50px;
+        left: 80px;
         height: 200px;
 
 
@@ -273,6 +273,7 @@ main .comic-details {
     display: flex;
     background-color: #f6f6f6;
     gap: 40px;
+    margin-bottom: 30px;
 
 
 
@@ -301,6 +302,17 @@ main .comic-details {
 
     .details-right {
         width: 40%;
+    }
+}
+
+main .delete-update {
+    display: flex;
+    justify-content: space-between;
+
+
+    a {
+        text-decoration: none;
+        color: white;
     }
 }
 

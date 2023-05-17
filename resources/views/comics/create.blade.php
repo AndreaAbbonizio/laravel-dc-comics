@@ -9,48 +9,48 @@
                 @csrf
                 <div class="mb-3">
                     <label for="title">Titolo</label>
-                    <input type="text" name="title" id="title">
+                    <input class="form-control" type="text" name="title" id="title">
                 </div>
                 <div class="mb-3">
                     <label for="description">Descrizione</label>
-                    <input type="text" name="description" id="description">
+                    <textarea class="form-control" type="text" name="description" id="description"></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="thumb">Immagine</label>
-                    <input type="text" name="thumb" id="thumb">
+                    <textarea class="form-control" type="text" name="thumb" id="thumb"></textarea>
                 </div>
 
                 <div class="mb-3">
                     <label for="price">Prezzo</label>
-                    <input type="text" name="price" id="price">
+                    <input class="form-control" type="text" name="price" id="price">
                 </div>
 
                 <div class="mb-3">
                     <label for="series">Serie</label>
-                    <input type="text" name="series" id="series">
+                    <input class="form-control" type="text" name="series" id="series">
                 </div>
 
                 <div class="mb-3">
                     <label for="sale_date">Data d'uscita</label>
-                    <input type="text" name="sale_date" id="sale_date">
+                    <input class="form-control" type="date" name="sale_date" id="sale_date">
                 </div>
 
                 <div class="mb-3">
                     <label for="type">Tipo</label>
-                    <input type="text" name="type" id="type">
+                    <input class="form-control" type="text" name="type" id="type">
                 </div>
 
                 <div class="mb-3">
                     <label for="artists">Artisti</label>
-                    <input type="text" name="artists" id="artists">
+                    <textarea class="form-control" type="text" name="artists" id="artists"></textarea>
                 </div>
 
                 <div class="mb-3">
                     <label for="writers">Scrittori</label>
-                    <input type="text" name="writers" id="writers">
+                    <textarea class="form-control" type="text" name="writers" id="writers"></textarea>
                 </div>
 
-                <button class="btn btn-primary" type="submit">Aggiungi</button>
+                <button  class="btn btn-primary mb-3" type="submit">Aggiungi</button>
             </form>
         </div>
     </main>

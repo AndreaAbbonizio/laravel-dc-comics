@@ -69,6 +69,18 @@
             </div>
 
         </div>
+
+        <div class="delete-update">
+            <button  class="btn btn-primary mb-3" type="submit"><a href="{{route('comics.edit', $comic->id)}}">Modifica</a></button>
+
+            <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                @csrf
+                @method('DELETE')
+        
+                <button class="btn btn-danger" type="submit">CANCELLA</button>
+              </form>
+
+        </div>
         
     </div>
 </main>
