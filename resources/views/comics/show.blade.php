@@ -70,18 +70,55 @@
 
         </div>
 
-        <div class="delete-update">
+        <div class="delete-update mb-3">
             <button  class="btn btn-primary mb-3" type="submit"><a href="{{route('comics.edit', $comic->id)}}">Modifica</a></button>
 
-            <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
-                @csrf
-                @method('DELETE')
-        
-                <button class="btn btn-danger" type="submit">CANCELLA</button>
-              </form>
+            <button id="delete-button" class="btn btn-danger">Elimina</button>
 
+      
         </div>
         
     </div>
 </main>
+<div id="delete-modal" class="hidden">
+
+    <div id="delete-modal-inner">
+      <p>
+        Sei sicuro di voler eliminare il fumetto?
+      </p>
+      <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+        @csrf
+        @method('DELETE')
+        <button type="submit" class="btn btn-danger">Elimina</button>
+      </form>
+    
+      <button id="delete-modal-close" class="btn btn-secondary">Chiudi</button>
+  
+    </div>
+  </div>
 @endsection
+
+
+@section('script')
+
+<script type="text/javascript">
+
+
+let deleteModalEl = document.getElementById('delete-modal');
+
+document.getElementById('delete-button').onclick = function() {
+  deleteModalEl.classList.remove('hidden');
+};
+
+
+document.getElementById('delete-modal-close').onclick = function () {
+  deleteModalEl.classList.add('hidden');
+}
+
+
+
+</script>
+
+@endsection
+
+
